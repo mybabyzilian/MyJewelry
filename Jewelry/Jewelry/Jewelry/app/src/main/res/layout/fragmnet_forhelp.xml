@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#8f0303"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/forhelp_user_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/user" />
+
+            <EditText
+                android:id="@+id/forhelp_homepage_search"
+                android:layout_width="240dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/forhelp_user_image"
+                android:background="@drawable/homepage_search_shape" />
+
+            <ImageView
+                android:id="@+id/forhelp_homepage_comment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/forhelp_homepage_sign"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/forhelp_homepage_sign"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/sign" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/homepage_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_online_forhelp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/online_forhelp_selector"
+                android:gravity="center"
+                android:text="线上求助"
+                android:textColor="#646464" />
+
+            <RadioButton
+                android:id="@+id/rb_offline_yuyue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/offline_yuyue_selector"
+                android:gravity="center"
+                android:text="线下预约"
+                android:textColor="#646464" />
+
+            <RadioButton
+                android:id="@+id/rb_surrond_arg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/surround_arg_slector"
+                android:gravity="center"
+                android:text="围观讨论"
+                android:textColor="#646464" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#cdcdcd" />
+
+        <FrameLayout
+            android:id="@+id/forhelp_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.5"/>
+
+
+</LinearLayout>
